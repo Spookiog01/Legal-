@@ -750,4 +750,267 @@
             }
         }
 
-        /* Cu
+        /* Custom Scrollbar */
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+
+        ::-webkit-scrollbar-track {
+            background: var(--navy);
+        }
+
+        ::-webkit-scrollbar-thumb {
+            background: var(--crimson);
+            border-radius: 4px;
+        }
+
+        ::-webkit-scrollbar-thumb:hover {
+            background: #d63652;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-content">
+                <a href="#" class="logo">
+                    <div class="logo-icon animate-pulse-glow">
+                        🛡️
+                    </div>
+                    Elite Investigations
+                </a>
+
+                <div class="nav-links">
+                    <a href="#services">Services</a>
+                    <a href="#stories">Share Story</a>
+                    <a href="#professional-services">Professional Services</a>
+                    <a href="#consultation">Consultation</a>
+                    <a href="#testimonials">About</a>
+                    <a href="#contact" class="btn-primary">Get Help Now</a>
+                </div>
+
+                <button class="mobile-menu-btn">☰</button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero animate-fade-in">
+        <div class="hero-content">
+            <h1>
+                Truth Revealed
+                <span class="highlight">Justice Served</span>
+            </h1>
+            <p>
+                Professional private investigation services with cutting-edge technology and decades of experience. 
+                From harassment documentation to corporate security, we deliver results that matter for targeted individuals seeking justice.
+            </p>
+            <div class="hero-buttons">
+                <a href="#consultation" class="btn-primary animate-pulse-glow">Start Free Consultation</a>
+                <a href="#stories" class="btn-secondary">Share Your Story</a>
+                <a href="#professional-services" class="btn-primary" style="background: var(--gold);">Professional Services</a>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <svg width="24" height="24" fill="white" viewBox="0 0 24 24">
+                <path d="M7 10l5 5 5-5z"/>
+            </svg>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="section bg-dark-blue">
+        <div class="container">
+            <div class="section-header animate-slide-up">
+                <h2>Professional Investigation Services</h2>
+                <p>Comprehensive investigation services backed by advanced technology and proven methodologies</p>
+            </div>
+
+            <div class="grid grid-3">
+                <div class="service-card card animate-slide-up">
+                    <div class="card-icon">
+                        🔍
+                    </div>
+                    <h3>Background Investigations</h3>
+                    <p>Comprehensive background checks for personal, professional, and legal purposes with detailed reporting and verification.</p>
+                    <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=400" alt="Background Investigation">
+                </div>
+
+                <div class="service-card card animate-slide-up">
+                    <div class="card-icon">
+                        📹
+                    </div>
+                    <h3>Surveillance Operations</h3>
+                    <p>Discreet surveillance services using state-of-the-art equipment and professional techniques for evidence gathering.</p>
+                    <img src="https://images.unsplash.com/photo-1550751827-4bd374c3f58b?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=400" alt="Surveillance">
+                </div>
+
+                <div class="service-card card animate-slide-up">
+                    <div class="card-icon">
+                        ⚖️
+                    </div>
+                    <h3>Legal Support Services</h3>
+                    <p>Expert witness testimony, evidence collection, and litigation support for legal proceedings and court cases.</p>
+                    <img src="https://images.unsplash.com/photo-1589829545856-d10d557cf95f?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=400" alt="Legal Support">
+                </div>
+
+                <div class="service-card card animate-slide-up">
+                    <div class="card-icon">
+                        🛡️
+                    </div>
+                    <h3>Corporate Security</h3>
+                    <p>Asset protection, employee misconduct investigations, and corporate intelligence services for businesses.</p>
+                    <img src="https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=400" alt="Corporate Security">
+                </div>
+
+                <div class="service-card card animate-slide-up">
+                    <div class="card-icon">
+                        💝
+                    </div>
+                    <h3>Personal Matters</h3>
+                    <p>Sensitive personal investigations including infidelity, missing persons, and family matters handled with discretion.</p>
+                    <img src="https://images.unsplash.com/photo-1556157382-97eda2d62296?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=400" alt="Personal Matters">
+                </div>
+
+                <div class="service-card card animate-slide-up">
+                    <div class="card-icon">
+                        💻
+                    </div>
+                    <h3>Digital Forensics</h3>
+                    <p>Advanced digital investigation services including data recovery, cyber crime analysis, and electronic evidence preservation.</p>
+                    <img src="https://images.unsplash.com/photo-1563986768609-322da13575f3?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=400" alt="Digital Forensics">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Professional Services for Targeted Individuals -->
+    <section id="professional-services" class="section professional-services">
+        <div class="container">
+            <div class="section-header animate-slide-up">
+                <h2>Professional Services for Targeted Individuals</h2>
+                <p>Specialized investigation services designed to help individuals who are being targeted, harassed, or need evidence to pursue legal action and achieve justice.</p>
+            </div>
+
+            <div class="grid grid-2">
+                <div class="professional-card card animate-slide-up">
+                    <div class="card-icon">
+                        📋
+                    </div>
+                    <h3>Harassment Documentation</h3>
+                    <p>Comprehensive documentation of harassment incidents with legal validity. We gather, preserve, and present evidence in court-ready formats for restraining orders and legal proceedings.</p>
+                    <img src="https://images.unsplash.com/photo-1544717297-fa95b6ee9643?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=400" alt="Harassment Documentation">
+                </div>
+
+                <div class="professional-card card animate-slide-up">
+                    <div class="card-icon">
+                        🎯
+                    </div>
+                    <h3>Evidence Gathering Against Specific Individuals</h3>
+                    <p>Professional evidence collection targeting specific individuals involved in harassment, stalking, or other illegal activities. Surveillance, documentation, and witness interviews.</p>
+                    <img src="https://images.unsplash.com/photo-1500389723459-ca24a5564899?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=400" alt="Evidence Gathering">
+                </div>
+
+                <div class="professional-card card animate-slide-up">
+                    <div class="card-icon">
+                        📱
+                    </div>
+                    <h3>Digital Harassment Investigation</h3>
+                    <p>Investigation of cyberbullying, online harassment, and digital stalking. We trace digital footprints, preserve electronic evidence, and identify perpetrators.</p>
+                    <img src="https://images.unsplash.com/photo-1563986768494-4dee2763ff3f?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=400" alt="Digital Investigation">
+                </div>
+
+                <div class="professional-card card animate-slide-up">
+                    <div class="card-icon">
+                        🏛️
+                    </div>
+                    <h3>Court Preparation & Legal Support</h3>
+                    <p>Expert preparation for legal proceedings including evidence presentation, witness testimony, and collaboration with legal counsel to strengthen your case.</p>
+                    <img src="https://images.unsplash.com/photo-1589829545856-d10d557cf95f?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=400" alt="Court Preparation">
+                </div>
+
+                <div class="professional-card card animate-slide-up">
+                    <div class="card-icon">
+                        🚨
+                    </div>
+                    <h3>Emergency Response Services</h3>
+                    <p>24/7 emergency documentation and evidence collection for urgent situations. Immediate response for restraining order applications and emergency legal needs.</p>
+                    <img src="https://images.unsplash.com/photo-1551601651-2a8555f1a136?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=400" alt="Emergency Response">
+                </div>
+
+                <div class="professional-card card animate-slide-up">
+                    <div class="card-icon">
+                        🔒
+                    </div>
+                    <h3>Confidential Consultation</h3>
+                    <p>Completely confidential consultation services with attorney-client privilege protection. Safe space to discuss your situation and develop an action plan.</p>
+                    <img src="https://images.unsplash.com/photo-1556155092-8707de31f9c4?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=400" alt="Confidential Consultation">
+                </div>
+            </div>
+
+            <div style="text-align: center; margin-top: 60px;">
+                <div style="background: rgba(233, 69, 96, 0.1); border: 2px solid var(--crimson); border-radius: 20px; padding: 40px; max-width: 800px; margin: 0 auto;">
+                    <h3 style="color: var(--crimson); margin-bottom: 20px;">🔥 Emergency Hotline Available 24/7</h3>
+                    <p style="margin-bottom: 25px;">If you're experiencing immediate harassment or need urgent evidence collection, our emergency response team is available around the clock.</p>
+                    <div style="display: flex; gap: 20px; justify-content: center; flex-wrap: wrap;">
+                        <a href="tel:(209)565-1438" class="btn-primary">📞 Call Emergency Line</a>
+                        <a href="#consultation" class="btn-secondary" style="border-color: var(--crimson); color: var(--crimson);">Book Urgent Consultation</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Interactive Story Submission -->
+    <section id="stories" class="section bg-navy">
+        <div class="container">
+            <div class="section-header animate-slide-up">
+                <h2>Share Your Story</h2>
+                <p>Your story matters. Share your experience confidentially and let us help you find the truth and seek justice.</p>
+            </div>
+
+            <div style="max-width: 900px; margin: 0 auto;">
+                <form class="story-form glass-effect" id="storySubmissionForm">
+                    <!-- Step Indicator -->
+                    <div class="step-indicator">
+                        <div class="step-progress">
+                            <span style="font-weight: 600;">Step <span id="currentStep">1</span> of 3</span>
+                            <span style="font-weight: 600;"><span id="progressPercent">33</span>% Complete</span>
+                        </div>
+                        <div class="progress-bar">
+                            <div class="progress-fill" id="progressFill" style="width: 33%;"></div>
+                        </div>
+                    </div>
+
+                    <!-- Step 1: Basic Information -->
+                    <div class="form-step active" id="step1">
+                        <h3 style="font-size: 2rem; margin-bottom: 30px;">Tell Us About Your Situation</h3>
+
+                        <div class="form-grid">
+                            <div class="form-group">
+                                <label class="form-label">Full Name *</label>
+                                <input type="text" class="form-input" id="fullName" required>
+                            </div>
+                            <div class="form-group">
+                                <label class="form-label">Email Address *</label>
+                                <input type="email" class="form-input" id="email" required>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label class="form-label">Phone Number</label>
+                            <input type="tel" class="form-input" id="phone">
+                        </div>
+
+                        <div class="form-group">
+                            <label class="form-label">Story Title *</label>
+                            <input type="text" class="form-input" id="storyTitle" placeholder="Brief title for your case" required>
+                        </div>
+                    </div>
+
+                    <!-- Step 2: Story Details -->
+                    <div class="form-step" id="step2">
+                        <h3 style="font-size: 2rem; margin-bottom: 30px;">Case Details</h3>
+
+                        <div class="form-grid">
